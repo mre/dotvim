@@ -1,0 +1,13 @@
+:FindByContext	find.txt	/*:FindByContext*
+:FindCommandDef	find.txt	/*:FindCommandDef*
+:FindCommandRef	find.txt	/*:FindCommandRef*
+:FindFunctionDef	find.txt	/*:FindFunctionDef*
+:FindFunctionRef	find.txt	/*:FindFunctionRef*
+:FindVariableDef	find.txt	/*:FindVariableDef*
+:FindVariableRef	find.txt	/*:FindVariableRef*
+:VimDoc	doc.txt	/*:VimDoc*
+g:EclimVimFindSingleResult	find.txt	/*g:EclimVimFindSingleResult*
+g:EclimVimPaths	find.txt	/*g:EclimVimPaths*
+vim-vim-doc	doc.txt	/*vim-vim-doc*
+vim-vim-find	find.txt	/*vim-vim-find*
+vim-vim-index	index.txt	/*vim-vim-index*
