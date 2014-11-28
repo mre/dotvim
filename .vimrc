@@ -29,9 +29,9 @@
   set softtabstop=2
   set list listchars=tab:\ \ ,trail:·
   set expandtab
-  set backupdir=~/vim_backup
+  set backupdir=/Volumes/Data/Backup/.vim_backup
+  set dir=/Volumes/Data/Backup/.vim_backup
   set swapfile
-  set dir=~/vim_backup
   "set transparency=10
 
   colorscheme desert
@@ -79,17 +79,19 @@
 " Packages
 " ========
 
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
 
   " let Vundle manage Vundle. Required!
-  Bundle 'gmarik/vundle'
+  Bundle 'gmarik/Vundle.vim'
   Bundle 'Lokaltog/vim-easymotion'
   Bundle 'L9'
   Bundle 'FuzzyFinder'
   Bundle 'wincent/Command-T'
-  Bundle 'Valloric/YouCompleteMe'
   Bundle 'godlygeek/tabular'
+
+  " All of your Plugins must be above this line
+  call vundle#end()
 
 " Movement
 " ========
@@ -210,10 +212,6 @@
 
   " Remap T to play a macro
   nnoremap T @
-
-  " Clear last search highlighting
-  " From: http://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting
-  nnoremap <esc> :noh<return><esc>
 
   " Don't switch to insert mode after inserting a new line
   nnoremap * maO<esc>`a
